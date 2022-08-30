@@ -1,6 +1,8 @@
   /* Hero section start */
-  
-  .hero-wrapper {
+  .hero{
+    padding-bottom: 96px;
+}
+.hero-wrapper {
     position: relative;
 }
 
@@ -37,6 +39,7 @@
     text-decoration: none;
     
     &:hover {
+        transition: 0.4s ease;
         background-color: var(--slightly-Desaturated-Cyan);
     }
     
@@ -56,16 +59,12 @@
 .hero__link:hover::before {
     background-image: url("../images/link-arrow-white.svg");
     background-color: #56a292;
+    transition: 0.4s ease;
 }
 
 
 .hero__text-box {
     max-width: 514px;
-}
-@include mobile-first (375px){
-    .hero-box{
-        height: 271px;
-    }
 }
 @include mobile-first (375px){
     .hero-box{
@@ -138,12 +137,15 @@
 }
 
 @include mobile-first (1100px) {
+    .hero{
+        padding-bottom: 150px;
+    }
     .hero__text-box {
         max-width: 445px;
     }
     .hero__title {
         margin-bottom: 53px;
-        font-size: 50px;
+        font-size: 56px;
         line-height: 50px;
     }
 }
