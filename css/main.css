@@ -440,6 +440,7 @@ body {
   font-family: "Public Sans", "Arial", sans-serif;
   font-weight: 400;
   background-color: var(--very-light-grey);
+  overflow-x: hidden;
 }
 
 /* STICKY-FOOTER */
