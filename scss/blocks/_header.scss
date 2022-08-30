@@ -1,0 +1,111 @@
+.site-header {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sitenav {
+  position: fixed;
+  top: 88px;
+  right: 20px;
+  z-index: 10;
+  background-color: var(--grayish-dark-blue);
+  width: 223px;
+  padding: 40px 50px;
+  display: none;
+  text-align: center
+}
+.sitenav__list {
+  @include list-unstyle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.sitenav__item {
+  margin-bottom: 32px;
+}
+.sitenav__item:nth-child(3){
+  margin-bottom: 0;
+}
+.sitenav__link {
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:var(--main-bg-color);
+  text-decoration: none;
+}
+.sitenav__link--green{
+  color: var(--slightly-Desaturated-Cyan);
+}
+.site-header__btn {
+  background-image: url("../images/btn-open.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 13px;
+  border: none;
+  background-color: transparent;
+}
+.site-nav__open .sitenav{
+  display: block;
+}
+.site-nav__open .site-header__btn{
+  background-image: url("../images/close-btn.svg");
+  width: 18px;
+  height: 18px;
+}
+@include mobile-first (375px){
+  .container{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .sitenav{
+    right: 32px;
+  }
+}
+@include mobile-first (768px){
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .site-header__btn{
+    display: none;
+  }
+  .sitenav{
+    position: static;
+    width: auto;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+  }
+  .sitenav__list{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sitenav__item{
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+  .sitenav__item:nth-child(3){
+    margin-right: 0;
+  }
+  .sitenav__link{
+    color :var(--grayish-dark-blue);
+  }
+  .sitenav__link--green{
+    color: var(--slightly-Desaturated-Cyan);
+  }
+}
+@include mobile-first (1100px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
