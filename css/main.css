@@ -1068,7 +1068,7 @@ body {
   text-decoration: none;
 }
 
-.site-footer-nav--green {
+.site-footer-nav__link--green {
   color: var(--slightly-Desaturated-Cyan);
 }
 
