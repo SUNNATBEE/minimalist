@@ -60,6 +60,9 @@
   width: 18px;
   height: 18px;
 }
+.scroll{
+  overflow: hidden;
+}
 @include mobile-first (375px){
   .container{
     padding-left: 32px;
