@@ -1,4 +1,4 @@
-var ElOpenBtn = document.querySelector(".site-header--js-open");
+var ElOpenBtn = document.querySelector(".site-header__btn--js-open");
 var ElBodyScroll = document.querySelector("body")
 
 ElOpenBtn.addEventListener("click", function () {

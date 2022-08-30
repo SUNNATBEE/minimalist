@@ -22,17 +22,17 @@
                 <nav class="sitenav">
                     <ul class="sitenav__list">
                         <li class="sitenav__item">
-                            <a class="sitenav__link sitenav__link--green" href="#">HOME</a>
+                            <a class="sitenav__link sitenav__link--green" href="#">home</a>
                         </li>
                         <li class="sitenav__item">
-                            <a class="sitenav__link" href="./portfolio.html">PORTFOLIO</a>
+                            <a class="sitenav__link" href="./portfolio.html">portfolio</a>
                         </li>
                         <li class="sitenav__item">
-                            <a class="sitenav__link" href="">CONTACT ME</a>
+                            <a class="sitenav__link" href="">contact me</a>
                         </li>
                     </ul>
                 </nav>
-                <button class="site-header__btn site-header--js-open " type="button">
+                <button class="site-header__btn site-header__btn--js-open " type="button">
                 </button>
             </div>
         </div>
@@ -51,68 +51,114 @@
                         <h1 class="hero__title">
                             Hey, I’m Alex Spencer and I love building beautiful websites
                         </h1>
-                        <a class="hero__link" href="#about">ABOUT ME</a>
+                        <a class="hero__link" href="#about">about me</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Hero section finish  -->
         
-
-         <!-- About section start -->
-
-         <section class="about" id="about">
+        <!-- About section start -->
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__wrapper">
-
                     <picture class="about__pictures">
-
-                           <!-- WepP Format -->
-                            <source type="image/webp" media="(min-width: 1000px)" 
-                            srcset="./images/alex-desktop-webP.webp 1x , ./images/alex-desktop-webP@2x.webp 2x">
-
-                            <source type="image/webp" media="(min-width: 689px)"
-                            srcset="./images/alex-tablet-webP.webp 1x, ./images/alextablet-webP@2x.webp 2x">
-
-                            <source type="image/webp" 
-                            srcset="./images/alex-mobile-webP.webp 1x, ./images/alex-mobile-webP@2x.webp 2x">
-                             <!-- WepP Format -->
-
-                            <!-- Jpg format default -->
-                            <source media="(min-width: 1000px)"
-                            srcset="./images/alex-desktop.jpg 1x , ./images/alex-desktop@2x.jpg 2x">
-
-                            <source media="min-width:768px"
-                            srcset="./images/alex-tablet.jpg 1x ,./images/alex-tablet@2x.jpg 2x">
-
-                            <img class="about__image" src="images/alex-mobile.jpg"
-                            width="311" height="346" 
-                            srcset="images/alex-mobile.jpg 1x , images/alex-mobile@2x.jpg 2x"
-                            alt="About-img">
-                               <!-- Jpg format default -->
-
-                        </picture>
-
-                        <div class="about__text-box">
-                            <h2 class="about__title">
-                                About Me
-                            </h2>
-                            <p class="about__text">
-                                I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
-                            </p>
-                            <a class="about__link" href="./portfolio.html">GO TO PORTFOLIO</a>
-                        </div>
+                        <!-- WepP Format -->
+                        <source type="image/webp" media="(min-width: 1000px)" 
+                        srcset="./images/alex-desktop-webP.webp 1x , ./images/alex-desktop-webP@2x.webp 2x">
+                        
+                        <source type="image/webp" media="(min-width: 689px)"
+                        srcset="./images/alex-tablet-webP.webp 1x, ./images/alextablet-webP@2x.webp 2x">
+                        
+                        <source type="image/webp" 
+                        srcset="./images/alex-mobile-webP.webp 1x, ./images/alex-mobile-webP@2x.webp 2x">
+                        <!-- WepP Format -->
+                        
+                        <!-- Jpg format default -->
+                        <source media="(min-width: 1000px)"
+                        srcset="./images/alex-desktop.jpg 1x , ./images/alex-desktop@2x.jpg 2x">
+                        
+                        <source media="(min-width: 689px)"
+                        srcset="./images/alex-tablet.jpg 1x ,./images/alex-tablet@2x.jpg 2x">
+                        
+                        <img class="about__image" src="images/alex-mobile.jpg"
+                        width="311" height="346" 
+                        srcset="images/alex-mobile.jpg 1x , images/alex-mobile@2x.jpg 2x"
+                        alt="About-img">
+                        <!-- Jpg format default -->
+                    </picture>
+                    <div class="about__text-box">
+                        <h2 class="about__title">
+                            About Me
+                        </h2>
+                        <p class="about__text">
+                            I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+                        </p>
+                        <a class="about__link" href="./portfolio.html">go to portfolio</a>
+                    </div>
                 </div>
             </div>
-         </section>
-
-           <!-- About section finish -->
+        </section>
+        <!-- about section start-->
+        
+        <!-- article start -->
+        <article class="article">
+            <div class="container">
+                <div class="article__wrapper">
+                    <div class="article__text-box" >
+                        <h2 class="article__title" >
+                            Interested in doing a project together?
+                        </h2>
+                    </div>
+                    <span class="article__border"></span>
+                    <a class="article__link" href="./contact.html">contact me</a>
+                </div>
+            </div> 
+        </article>
+        <!-- article start -->
+        
     </main>
     <!-- Main finish  -->
     
     <!-- Footer start -->
     <footer class="site-footer">
-        
+        <div class="container">
+            <div class="site-footer__wrapper">
+                <a class="logo" href="./index.html">
+                    <img class="site-footer__img" src="./images/footer-logo.svg" alt="footer-logo">
+                </a>
+                <nav class="site-footer-nav">
+                    <ul class="site-footer-nav__list">
+                        <li class="site-footer-nav__item">
+                            <a class="site-footer-nav__link site-footer-nav__link--green" href="#">home</a>
+                        </li>
+                        <li class="site-footer-nav__item">
+                            <a class="site-footer-nav__link" href="./portfolio.html">portfolio</a>
+                        </li>
+                        <li class="site-footer-nav__item">
+                            <a class="site-footer-nav__link" href="./contact.html">contact me</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="site-footer__list">
+                    <li class="site-footer__item">
+                        <a class="site-footer__link" href="https://github.com/alex" target="blank">
+                            <img class="site-footer__icons" src="./images/github.svg" alt="git hub">
+                        </a>
+                    </li> 
+                    <li class="site-footer__item">
+                        <a class="site-footer__link" href="https://twitter.com/alex_gaynor?lang=en" target="blank">
+                            <img class="site-footer__icons" src="./images/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="site-footer__item">
+                        <a class="site-footer__link" href="https://www.linkedin.com/pub/dir/Alex/Gaynor" target="blank">
+                            <img class="site-footer__icons" src="./images/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <!-- Footer finish -->
     <script src="./js/main.js"></script>

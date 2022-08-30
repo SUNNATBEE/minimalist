@@ -14,7 +14,6 @@
     width: 100%;
     height: 221px;
 }
-
 .hero__title {
     margin: 24px 0 32px 0;
     font-family: var(--Ibarra-font-family);
@@ -24,7 +23,6 @@
     letter-spacing: -0.357143px;
     color: var(--grayish-dark-blue);
 }
-
 .hero__link {
     display: inline-flex;
     align-items: center;
@@ -55,14 +53,11 @@
         content: "";
     }
 }
-
 .hero__link:hover::before {
     background-image: url("../images/link-arrow-white.svg");
     background-color: #56a292;
     transition: 0.4s ease;
 }
-
-
 .hero__text-box {
     max-width: 514px;
 }
@@ -96,7 +91,6 @@
         }
     }
 }
-
 @include mobile-first (700px) {
     .hero-box {
         max-width: 900px;
@@ -116,7 +110,6 @@
         font-size: 45px;
     }
 }
-
 @include mobile-first (900px) {
     .hero-box {
         width: 100%;
@@ -135,7 +128,6 @@
         }
     }
 }
-
 @include mobile-first (1100px) {
     .hero{
         padding-bottom: 150px;
@@ -149,5 +141,4 @@
         line-height: 50px;
     }
 }
-
 /* Hero section finish */
