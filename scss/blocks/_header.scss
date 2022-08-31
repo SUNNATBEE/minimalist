@@ -10,7 +10,7 @@
   align-items: center;
 }
 .sitenav {
-  position: fixed;
+  position: absolute;
   top: 88px;
   right: 20px;
   z-index: 10;
@@ -79,6 +79,9 @@
   }
   .site-header__btn{
     display: none;
+  }
+  .scroll{
+    overflow: auto;
   }
   .sitenav{
     position: static;

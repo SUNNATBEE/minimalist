@@ -38,7 +38,12 @@
   height: 100%;
   margin: 0;
 }
-
+@mixin font ($size, $line, $weight, $color){
+    font-size: $size;
+    line-height: $line;
+    font-weight: $weight;
+    color:$color
+  }
 // %list-unstyle {
 //   margin: 0;
 //   padding-left: 0;

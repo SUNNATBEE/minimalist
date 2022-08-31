@@ -26,9 +26,6 @@
     color: #fff;
     text-decoration: none
 }
-.site-footer-nav__link--green{
-    color: var(--slightly-Desaturated-Cyan);
-}
 .site-footer__list {
     @include list-unstyle;
     display: flex;
@@ -51,6 +48,9 @@
     }
 }
 @include mobile-first(768px){
+    .site-footer{
+        padding: 0;
+    }
     .site-footer__wrapper {
         flex-direction: row;
         

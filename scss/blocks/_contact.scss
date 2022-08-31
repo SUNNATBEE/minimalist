@@ -1,0 +1,107 @@
+/*  Contact section start */
+.contact {
+    padding-bottom: 96px;
+}
+.contact__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--grayish-dark-blue);
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+.contact__form-label {
+    display: flex;
+    flex-direction: column;
+    @include font (13px, 30px, 700, var( --grayish-dark-blue));
+    margin-bottom: 24px;
+    opacity: 0.8;
+}
+.contact__form-span {
+    display: inline-block;
+    font-style: italic;
+    @include font(10px, 12px, 700, var(--bright-red));
+    margin-top: 4px;
+    opacity: 0;
+}
+.contact__form-input {
+    @include font (13px, 30px, 700, var( --grayish-dark-blue));
+    padding: 17px 0 17px 16px;
+    outline: none;
+    background-color: #e6e6e7;
+    border: 1px solid #e6e6e7;
+    &::placeholder {
+        @include font (13px, 30px, 400,  var( --grayish-dark-blue));
+        opacity: 0.4;
+    }
+}
+.contact__form-input:focus {
+    border: 1px solid var(--slightly-Desaturated-Cyan);
+}
+.contact__form-input:not(:placeholder-shown):not(:focus):invalid {
+    border: 1px solid var(--bright-red);
+    color: var(--bright-red);
+}
+
+.contact__form-input:not(:placeholder-shown):not(:focus):invalid + span{
+    opacity: 1;
+}
+.contact__form-textarea:not(:placeholder-shown):not(:focus):invalid {
+    border: 1px solid var(--bright-red);
+}
+
+.contact__form-textarea:focus {
+    border: 1px solid var(--slightly-Desaturated-Cyan);
+}
+.contact__form-textarea:not(:placeholder-shown):not(:focus):invalid + span {
+    opacity: 1;
+}
+.contact__form-textarea {
+    height: 96px;
+    resize: none;
+    padding: 9px 0 0 16px;
+    background-color: #e6e6e7;
+    border: none;
+    outline: none;
+    &::placeholder {
+        @include font (13px, 30px, 400,  var( --grayish-dark-blue));
+        opacity: 0.4;
+    }
+}
+.contact__form-button {
+    max-width: 200px;
+    width: 100%;
+    @include font (12px, 14px, 400, #fff);
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: var(--dark-blue);
+    padding: 17px 0;
+    border: none;
+    cursor: pointer;
+}
+@include mobile-first (375px) {
+    .contact {
+        padding-bottom: 80px;
+    }
+}
+@include mobile-first (1000px) {
+    .contact {
+        padding-top: 48px;
+        padding-bottom: 110px;
+    }
+    .contact__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact__form-input {
+        width: 635px;
+    }
+    .contact__title {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+}
+/*  Contact section finish */
